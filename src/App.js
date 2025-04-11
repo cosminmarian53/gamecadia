@@ -1,23 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter , Routes, Route } from "react-router-dom";
+import logo from "./logo.svg";
+import "./App.css";
+
+import Login from "./pages/Login"; 
+
+
+
+import Navbar from './components/model/navbar';
+import Body from './components/model/body';
+import Footer from './components/model/footer';
+import GameTab from './components/model/gametab';
+import Cookies from './components/model/cookies';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <BrowserRouter>
+    
+    <Navbar/>
+    <Body>
+    <Routes>
+      <Route path="/login" element={<Login />}/>
+      
+    </Routes>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <GameTab game='Placeholder'/>
+      <Cookies/>      
+    </Body>
+  </BrowserRouter>
+    <Footer/>
+
     </div>
   );
 }

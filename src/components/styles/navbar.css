@@ -1,0 +1,171 @@
+:root /*variabile globale*/
+{
+    --navbar_height: 10vh;
+    --navbar_form_width:75%;
+}
+
+nav {
+    background-color: rgb(24, 137, 237);
+    display: flex; 
+      /* Centers items horizontally */
+    align-items: center;  /* Centers items vertically */
+    height: var(--navbar_height) /* Set a height for vertical centering to work */
+    
+}
+
+/*
+a {
+    color: white;
+    text-decoration: none;
+    max-width: 8%; 
+    font-size: 18px;
+    
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-left: 0.1vw solid white;
+    border-right: 0.1vw solid white;  
+    height: var(--navbar_height); /* Set a height for vertical centering to work */
+    /*position: relative; 
+}
+
+a:hover
+{
+    cursor: pointer;
+    color: rgb(0, 255, 229);
+    background-color: rgb(74, 164, 244);
+    transition: 0.3s;
+
+}*/
+
+
+#profile {
+    border-right: none;
+    background-image: url("../assets/profile_placeholder_2.png");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: calc(var(--navbar_height)*0.8);
+    width: calc(var(--navbar_height)*0.8);
+    border-radius: 50%; 
+    position: relative; 
+    right: 1vw;  
+}
+#profile:hover
+{
+    cursor: pointer;
+    height: calc(var(--navbar_height)*0.9);
+    width: calc(var(--navbar_height)*0.9);
+    transition:0.3s;
+}
+
+form{
+
+    height: 80%;
+    width: 60%;
+    
+    display: flex; 
+    align-items: center; 
+    padding-top: 0.5%;
+    align-items: center;
+
+    position:relative;
+    margin: auto;
+
+}
+
+
+#search_form input[type="text"] {
+    height: 70%;
+    width: 100%;
+    border-radius: 25px 0 0 0;
+    border: none;
+    padding-left: 1vw;
+    font-size: 18px;
+    
+    margin-right:0;
+    
+    position:relative;
+   
+    
+}
+
+#search_form input[type="submit"] {
+    height: 70%;
+    width: 15%;
+    border-radius: 0 0 25px 0;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(147, 147, 147);
+    font-size: 18px;
+    position:relative;
+
+    margin-left:0;/* Ca sa se lipeasca de searchbar */
+
+    text-align: center;
+
+    border-left: 1px solid rgb(147, 147, 147);
+}
+
+#search_form input[type="submit"]:hover {
+   
+    background-color: rgb(114, 186, 225);
+    color: rgb(225, 255, 0);
+
+    
+
+    border-left: 1px solid rgb(147, 147, 147);
+    transition: 0.3s;
+}
+#search_form input[type="submit"]:focus
+{
+    height: 75%;
+    width: 25%;
+}
+
+#home
+{
+    display: flex;
+    
+    height: calc(var(--navbar_height)*0.8);
+    width: calc(var(--navbar_height)*0.8);
+
+    background-image: url("../assets/Logo.png");
+    background-position: center;
+    background-size: cover;
+
+    margin-left: calc(var(--navbar_height)*0.12);
+
+}
+
+#home:hover
+{
+    cursor: pointer;
+    rotate: 360deg;
+    transition: 1.2s;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+    cursor: pointer;
+   
+    transition: 0.3s;
+}
+
+a:hover::after
+{
+    content: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+}

@@ -1,0 +1,79 @@
+#cookies
+{
+    
+    position:absolute;
+    margin:auto;
+
+    height: 70vh;
+    width: 70vw;
+    
+    background-color: rgb(76, 153, 215);
+    align-content: center;
+    text-align: center;
+    border:1px solid black;
+    border-radius: 1vw;
+
+}
+
+#cookies p
+{
+    text-align: center;
+    margin:auto
+
+}
+
+#accept
+{
+    width:5%;
+    height:5%;
+    min-width: fit-content;
+
+
+    margin:auto;
+    border-width: 0;
+    border-radius: 25px;
+
+    background-color: green;
+    position:relative;
+
+   
+}
+
+.button-container
+{
+    margin-top: max(10%, 5vh);
+
+}
+
+#accept:hover
+{
+   transition: 0.3s;
+   background-color: rgb(2, 189, 2);
+   color: white;
+}
+
+#decline
+{
+    width:5%;
+    height:5%;
+
+    min-width: fit-content;
+    margin-right: 1%;
+
+
+    margin:auto;
+    border-width: 0;
+    border-radius: 25px;
+
+    background-color: rgb(168, 2, 2);
+    position:relative;
+
+   
+}
+
+#decline:hover
+{
+   transition: 0.3s;
+   background-color: hsl(0, 100%, 50%);
+   color: white;
+}

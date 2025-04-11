@@ -1,0 +1,26 @@
+.gametab
+{
+    width: 23vw;
+    height: 18vh;
+    min-height: 18vh;
+    min-width: 24vw;
+    background-color: rgb(27, 128, 217);
+    margin:2pt;
+    border-radius: 1vw;
+    
+    position:relative;
+    
+    text-align: center;
+
+  
+    
+}
+
+.gametab:hover
+{
+    background-color: rgb(24, 137, 237);
+    transition: 0.3s;
+    cursor: pointer;
+    width: 25vw;
+    height: 20vh;
+}

@@ -1,0 +1,14 @@
+.master
+{
+    padding-top: 1%;
+    padding-bottom: 1vh;
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(75, 154, 223);
+    display: flex;
+    flex-wrap:wrap;
+    
+    justify-content: center;
+    
+    
+}
