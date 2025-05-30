@@ -1,26 +1,65 @@
-.gametab
-{
-    width: 23vw;
-    height: 18vh;
-    min-height: 18vh;
-    min-width: 24vw;
-    background-color: rgb(27, 128, 217);
-    margin:2pt;
-    border-radius: 1vw;
-    
-    position:relative;
-    
+/* Ensure this is in src/styles/gametab.css */
+
+.gametab {
+    border: 1px solid #e0e0e0; /* Lighter border */
+    border-radius: 10px; /* More rounded corners */
+    padding: 16px;
+    margin: 10px; /* Margin around each tab */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    background-color: #398bbd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent content spill */
+    min-height: 150px; /* Minimum height to maintain some consistency */
+    justify-content: space-between; /* Distribute space if content is small */
+  }
   
-    
-}
-
-.gametab:hover
-{
-    background-color: rgb(24, 137, 237);
-    transition: 0.3s;
-    cursor: pointer;
-    width: 25vw;
-    height: 20vh;
-}
+  .gametab:hover {
+    transform: translateY(-6px) scale(1.02); /* Slightly more pronounced hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Styles for content rendered via dangerouslySetInnerHTML */
+  .gametab a {
+    text-decoration: none;
+    color: #2c3e50; /* Darker, more modern link color */
+    font-weight: 600; /* Bolder font for game titles */
+    font-size: 1.1rem;
+    display: block; /* Make the whole link area clickable if needed */
+    width: 100%;
+  }
+  
+  .gametab img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px; /* Rounded corners for images */
+    margin-bottom: 12px; /* More space below image */
+    object-fit: cover; /* Ensure image covers the area if dimensions are fixed */
+    max-height: 120px; /* Limit image height */
+  }
+  
+  .gametab p { /* Fallback text styling */
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #ffffff; /* Slightly different color for text */
+  }
+  
+  /* Add this to App.css or a global stylesheet if you prefer */
+  .game-elements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center tabs on the line */
+    padding: 10px; /* Padding around the container */
+    gap: 10px; /* Consistent gap from UserProfile */
+  }
+  .add-game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; /* Space above the add game button */
+  }
