@@ -1,0 +1,35 @@
+#UserProfile
+{
+    width: 80%;
+    min-height:20vh;
+    
+    background-color:  rgb(27, 128, 217);
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 0%;
+    border-radius: 5vw;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#UserProfile h1
+{
+    color: aliceblue;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 200%;
+}
+
+#UserProfile p
+{
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 1.2em;
+    font-style: oblique;
+}
+
+
+
+

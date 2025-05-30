@@ -1,0 +1,174 @@
+/* baeldung pentru backend*/
+#loginContainer
+{
+    height: 40vh;
+    width: 100%;
+    padding-bottom: 10%;
+    align-items: center;
+   
+}
+
+#loginContainer h1
+{
+    color: aliceblue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#sign-up-link
+{
+    color: aliceblue;
+    font-weight:600;
+    font-style: italic;
+}
+
+#sign-up-link:hover
+{
+    color: rgb(116, 209, 227);
+    font-weight:600;
+    font-style: italic;
+}
+
+
+
+#loginBox
+{
+    width: 80%;
+    min-height:80%;
+    height: fit-content;
+    background-color:  rgb(27, 128, 217);
+    margin: auto;
+    text-align: center;
+    padding-bottom: 0%;
+
+    border-radius: 5vw;
+
+    padding-bottom: 25px;
+    
+}
+
+
+
+#loginForm {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10pt; 
+}
+
+
+#loginBox form input[type = "text"]
+{
+    width: 80%;
+    font-size: 20pt;
+
+    text-align: center;
+    background-color: rgb(19, 176, 244);
+    color:aliceblue;
+    border: 1px solid aliceblue;
+    
+    border-radius: 5pt;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#loginBox form input[type = "text"]:hover
+{
+    transition: 0.5s;
+    box-shadow: aliceblue 0px 0px 15px 5px;
+}
+
+#loginBox form input[type = "password"]
+{
+    width: 80%;
+    font-size: 20pt;
+    text-align: center;
+
+    background-color: rgb(19, 176, 244);
+    color:aliceblue;
+    
+    border-radius: 5pt;
+    
+    border: 1px solid aliceblue;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#loginBox form input[type = "password"]:hover
+{
+    transition: 0.5s;
+    box-shadow: aliceblue 0px 0px 15px 5px;
+}
+
+
+
+#loginBox button 
+{
+   
+   
+    
+    font-size: 10pt;
+    text-align: center;
+
+    background-color: rgb(19, 176, 244);
+    color:aliceblue;
+    
+    border-radius: 5pt;
+    
+    border: 1px solid aliceblue;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.passDiv button:hover {
+    color: rgb(116, 209, 227);
+   
+}
+
+#loginBox form input[type = "submit"]
+{
+   background-color: rgb(19, 176, 244);
+   border-radius: 0%;
+   border: 1px solid aliceblue;
+   padding: 1%;
+   color: aliceblue;
+    font-size: 20pt;
+   font-style: italic;
+   font-weight: bolder;
+
+   border-radius: 5pt;
+
+}
+
+
+#loginBox form input[type = "submit"]:hover
+{
+
+    transition: 0.4s;
+    color:rgb(255, 255, 255);
+
+    animation: logIn_animation 3s infinite;
+}
+
+@keyframes logIn_animation
+{
+    0% {
+        box-shadow: aliceblue 0px 0px 3px 3px;
+    }
+    25% {
+        box-shadow: aliceblue 2px 2px 5px 3px;
+    }
+    50% {
+        box-shadow: aliceblue 3px 2px 8px 4px;
+    }
+    75% {
+        box-shadow: aliceblue 2px -2px 5px 3px;
+    }
+    100% {
+        box-shadow: aliceblue 0px 0px 3px 3px;
+    }
+}
+

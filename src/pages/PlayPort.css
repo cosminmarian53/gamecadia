@@ -1,0 +1,18 @@
+#PlayPortContainer
+{
+    
+    width: 80vw;
+    height: 45vw;
+    text-align: center;
+    justify-content: center; /* center horizontally */
+    align-items: center; 
+    background-color: violet;
+
+}
+
+
+#gameFrame
+{
+    width: 80vw;
+    height: 45vw;
+}
