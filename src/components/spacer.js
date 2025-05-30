@@ -1,4 +1,4 @@
-import '../styles/spacer.css';
+import './styles/spacer.css';
 
 function Spacer() {
     return (

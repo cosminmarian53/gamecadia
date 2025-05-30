@@ -1,5 +1,5 @@
 
-import "../styles/cookies.css";
+import "./styles/cookies.css";
 
 function Cookies() {
 
