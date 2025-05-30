@@ -3,7 +3,7 @@ const { MongoClient } = require("mongodb");
 const cors = require("cors"); // Import CORS
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // MongoDB Atlas connection string. The database name is part of the URI.
 const mongoUrl =
